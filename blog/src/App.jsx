@@ -21,11 +21,12 @@ function App() {
       isInitial = false;
       return;
     }
+   
 
     if (cart.changed) {
       dispatch(sendCartData(cart));
     }
-  }, [cart, dispatch]);
+  },[cart, dispatch]);
 
   return (
     <Fragment>
